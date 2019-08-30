@@ -19,7 +19,6 @@ if choose_enemy_pokemon == "Squirtle":
 
 
 while heal_pikachu > 0 and healenemy > 0:
-
     choosed_atack = input("Que ataque quieres usar? (Chispazo | 14) / Bola Voltio (15)|")
     if choosed_atack == "Chispazo":
         healenemy -= 14
@@ -31,11 +30,16 @@ while heal_pikachu > 0 and healenemy > 0:
     print("El enemigo te a atacado!!")
     if choose_enemy_pokemon == "Charmander":
         heal_pikachu -= 10
+        print("El enemigo te quitado 10 de vida!!")
+        print("Vida Pikachu:", heal_pikachu," Vida Charmander:", healenemy)
     if choose_enemy_pokemon == "Bulbasaur":
         heal_pikachu -= 8
+        print("El enemigo te quitado 8 de vida!!")
+        print("Vida Pikachu:", heal_pikachu, " Vida Bulbasaur:", healenemy)
     if choose_enemy_pokemon == "Squirtle":
         heal_pikachu -= 7
-    print("Vida Pikachu: ", heal_pikachu)
+        print("El enemigo te quitado 7 de vida!!")
+        print("Vida Pikachu:", heal_pikachu, " Vida Bulbasaur:", healenemy)
 
 
 print("Combate Finalizado")
